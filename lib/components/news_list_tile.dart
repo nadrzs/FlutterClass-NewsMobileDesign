@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:news_app_tut/models/news_model.dart';
 
@@ -29,7 +27,7 @@ class _NewsListTileState extends State<NewsListTile> {
         padding: EdgeInsets.all(12.0),
         height: 130,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Colors.blueGrey,
           borderRadius: BorderRadius.circular(26.0),
         ),
         child: Row(

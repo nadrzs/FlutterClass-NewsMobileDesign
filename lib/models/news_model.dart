@@ -1,5 +1,3 @@
-//while the app is building let's create the NewsData class
-
 class NewsData {
   String? title;
   String? author;
@@ -7,7 +5,6 @@ class NewsData {
   String? urlToImage;
   String? date;
 
-  //let's create the constructor
   NewsData(
     this.title,
     this.author,
@@ -16,8 +13,6 @@ class NewsData {
     this.urlToImage,
   );
 
-  //we will use dummy data to generate the news,but you can use a third party api or your own backend to extract the data
-  //I will copy the data from my previous code, you can create your own data , I used newsApi to get the data
   static List<NewsData> breakingNewsData = [
     NewsData(
         "U.S. Gas Prices Fall Below \$4 a Gallon, AAA Says - The New York Times",

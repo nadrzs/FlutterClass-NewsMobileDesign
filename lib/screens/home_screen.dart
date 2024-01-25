@@ -16,25 +16,28 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //let's start with the Appbar
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Colors.transparent,
         title: Text(
-          "NewsApp",
+          "Today's News", 
           style: TextStyle(color: Colors.black),
         ),
         actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.notifications_outlined,
-                color: Colors.black,
-              ))
+          Stack(
+              alignment: Alignment.topRight,
+              children: [
+                CircleAvatar(
+                    radius: 30,
+                ),
+                CircleAvatar(
+                    radius: 10,
+                    backgroundColor: Colors.red,
+                ),
+              ],
+          )
         ],
       ),
 
-      //Let's now work on the body
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16),
@@ -43,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Breaking News",
+                "Latest News",
                 style: TextStyle(
                   fontSize: 26.0,
                   fontWeight: FontWeight.bold,
@@ -86,17 +89,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
 
-      //Now let's create the button navigation bar
       bottomNavigationBar: Container(
-        // let's make our button nav bar float
         margin: EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Colors.blueGrey,
           borderRadius: BorderRadius.circular(16),
         ),
         child: BottomNavigationBar(
           elevation: 0.0,
-          selectedItemColor: Colors.orange.shade900,
+          selectedItemColor: Colors.black,
           items: [
             BottomNavigationBarItem(
               backgroundColor: Colors.transparent,

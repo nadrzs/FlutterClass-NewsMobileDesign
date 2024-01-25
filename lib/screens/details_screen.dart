@@ -17,7 +17,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.orange.shade900),
+        iconTheme: IconThemeData(color: Colors.deepPurpleAccent),
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
